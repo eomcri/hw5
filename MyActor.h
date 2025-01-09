@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "CharacterMovementManager.generated.h"
+#include "MyActor.generated.h"
 
 UCLASS()
-class HW5_API ACharacterMovementManager : public AActor
+class HW5_API AMyActor : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	ACharacterMovementManager();
-	
+	AMyActor();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -22,6 +22,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
 public:
 	UPROPERTY()
 	FVector2D start;
